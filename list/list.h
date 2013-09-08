@@ -83,6 +83,10 @@ Insert( ElementType X, List L, Position P )
 {
     Position tempCell;
     tempCell = (Position)malloc(sizeof(struct Node));
+    if (tempCell == NULL) {
+        printf("FatalError");
+        exit;
+    }
     tempCell->Element = X;
     tempCell->Next = P->Next;
     P->Next = tempCell;
