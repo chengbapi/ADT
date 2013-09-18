@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
+
+typedef int ElementType;
 #include "list.h"
 
 int main(void)
